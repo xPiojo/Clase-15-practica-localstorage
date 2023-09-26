@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tareas</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="titulo">Lista de tareas</h1>
+
+      <div class="col">
+        <div class="col s12 m6">
+          <div class="input-field">
+            <label for="tarea-nueva">Agregar tarea nueva</label>
+            <input
+              type="text"
+              name="tarea-nueva"
+              id="tarea-nueva"
+              class="validate"
+            />
+          </div>
+          <button type="button" id="btn-agregar-tarea" class="btn">
+            Agregar
+          </button>
+        </div>
+
+        <div class="col s12 m6 search-container">
+          <div class="input-field col s12 m6 search-container">
+            <input type="search" id="search" class="validate" placeholder="Buscar..." />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul id="lista-tareas" class="collection">
+        <!-- las tareas se agregarán aquí -->
+      </ul>
+    </div>
+
+    <script src="./js/master.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
